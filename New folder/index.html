@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>DDS Automation</title>
+  </head>
+  <body>
+    <div>
+      <h1>Emmott DDS</h1>
+      <div class="section-1">
+        <label for="Drawing No" class="drawing_no">Drawing No:</label>
+        <input type="string" class="drawing" />
+        <label for="Rev No">Rev No:</label>
+        <input type="string" class="rev" />
+        <label for="page no">Page No:</label>
+        <input type="Number" min="1" max="10" class="pages" />
+
+        <button type="submit">Validate</button>
+      </div>
+
+      <div>
+        <h3>Default Tolerance Values</h3>
+        <div class="section-3">
+          <label for="4 digit">O.XXXX:</label>
+          <input type="Number" min="0" max=".999" />
+          <label for="3 digit">O.XXX:</label>
+          <input type="Number" min="0" max=".999" />
+          <label for="2 digit">O.XX:</label>
+          <input type="Number" min="0" max=".99" />
+          <label for="1 digit">O.X:</label>
+          <input type="Number" min="0" max=".9" />
+          <label for="angle">Angle:</label>
+          <input type="Number" min="0" max="20" />
+        </div>
+      </div>
+      <div class="section-4">
+        <label for="balloons">Balloon No:</label>
+        <input type="Number" min="1" max="500" class="balloons" />
+        <label for="digit">digit:</label>
+        <input type="Number" min="0" max="6" class="digit" />
+        <label for="Units">Units:</label>
+        <select name="Units" id="Units">
+          <option value="Inch">Inch</option>
+          <option value="deg">deg</option>
+          <option value="µin">µin</option>
+       <!-- <div id="container">
+          </select >
+            <label for="Value" >Values:</label>
+            <select name="Units" id="Units">
+              <option value="Target" class="single">Target</option>
+              <option value="Range" class="both">Range</option>
+              <option value="Surface Finish" class="both">Surface Finish</option>
+              <option value="TIR" class="tir">TIR</option>
+              <option value="Thread details" class="both">Thread details</option>
+            </select>
+            <input type="Number" min="0" max="1000" class="single" />
+            <input type="Number" min="0" max="1000" class="both" />
+       </div>    -->
+        
+      </div>
+    </div>
+
+
+    <div id="container" class="first">
+      TEST
+  </div>
+  </body>
+  <script src="index.js"></script>
+</html>

@@ -1,0 +1,7 @@
+.icons{
+    display: flex;
+    font-display: row;
+    margin-left: 2px;
+    color: teal;
+    font-size: 50px;
+}
